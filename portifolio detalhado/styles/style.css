@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root{
+  --cor-primaria: #000000;
+  --cor-secundaria: #F6F6F6;
+  --cor-terciaria: #22D4FD;
+  --cor-hover: #272727;
+
+  --fonte-principal: 'Krona One', sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
 *{
   margin: 0;
   padding: 0;
 }
 
 body{
-  background-color: black;
-  color: #F6F6F6;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
   box-sizing: border-box;
 }
 
@@ -21,9 +31,9 @@ body{
 }
 
 .cabecalho__menu__link{
-  color: #22D4FD;
+  color: var(--cor-terciaria);
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-secundaria);
   font-weight: 600;
   font-size: 24px; 
   text-decoration: none;
@@ -35,6 +45,8 @@ body{
   justify-content: space-between;
 
   padding: 6.36% 15%;
+
+  gap: 15px;
 }
 
 .apresentacao__conteudo{
@@ -48,16 +60,16 @@ body{
 
 .apresentacao__conteudo__titulo{
   font-size: 36px;
-  font-family: 'Krona One', sans-serif;
+  font-family: var(--fonte-principal)
 }
 
 .apresentacao__conteudo__titulo_destaque{
-  color: #22D4FD;
+  color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo__texto{
   font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-secundaria)
 }
 
 .apresentacao__conteudo__links{
@@ -69,9 +81,9 @@ body{
   gap: 32px;
 }
 
-.apresentacao__conteudo__links__subtitulo{
+.apresentacao__conteudo__links_subtitulo{
   font-size: 24px;
-  font-family: 'Krona One', sans-serif;
+  font-family: var(--fonte-principal);
   font-weight: 400;
 }
 
@@ -84,20 +96,20 @@ body{
   align-items: center;
   justify-content: center;
 
-  color: #F6F6F6;
+  color: var(--cor-secundaria);
 
-  border: 2px solid #22D4FD;
+  border: 2px solid var(--cor-terciaria);
   border-radius: 8px;
 
   text-align: center;
   font-size: 24px;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-secundaria);
   font-weight: 600;
 }
 
 .apresentacao__conteudo__links__botao:hover{
-  background-color: #272727;
+  background-color: var(--cor-hover);
 }
 
 .apresentacao__foto{
@@ -108,9 +120,9 @@ body{
   padding: 24px;
 
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-secundaria);
   font-size: 24px;
     
-  background-color: #22D4FD;
-  color: #000000;
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
 }
