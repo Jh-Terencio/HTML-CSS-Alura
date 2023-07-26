@@ -6,7 +6,6 @@
 }
 
 body{
-  height: 100vh;
   background-color: black;
   color: #F6F6F6;
   box-sizing: border-box;
@@ -17,7 +16,7 @@ body{
   align-items: center;
   justify-content: space-between;
 
-  margin: 10% 15%;
+  padding: 11% 15%;
 }
 
 .apresentacao__conteudo{
@@ -85,4 +84,15 @@ body{
 
 .apresentacao__foto{
   width: 387px;
+}
+
+.rodape{
+  padding: 24px;
+
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+    
+  background-color: #22D4FD;
+  color: #000000;
 }
